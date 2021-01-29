@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.container}>
       <div style={styles.email}>
-        <i class='fas fa-envelope'></i> support@experienceconcerts.co
+        <i className='fas fa-envelope'></i> support@experienceconcerts.co
       </div>
       <div style={styles.subcontainer}>
         <div style={styles.brand}>EXP|CON</div>

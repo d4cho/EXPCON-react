@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './Menu.css';
+import styles from './Menu.module.css';
 
 const Menu = (props) => {
   const color = props.color ? props.color : '#fff';
 
   return (
-    <div className='Menu' style={{ color }}>
-      <i class='fas fa-bars'></i> EXP|CON
+    <div className={styles.Menu} style={{ color }}>
+      <i className='fas fa-bars'></i> EXP|CON
     </div>
   );
 };

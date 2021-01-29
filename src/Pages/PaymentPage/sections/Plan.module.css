@@ -1,27 +1,27 @@
-.planSubheading {
+.subheading {
   font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
-.planRadioContainer {
+.radioContainer {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  padding-top: 1rem;
   padding-bottom: 5rem;
 }
 
-.planRadioBasic {
+.radioBasic {
   color: #d24848;
   padding-right: 3rem;
 }
 
-.planRadioAdvanced {
+.radioAdvanced {
   color: #ffb33f;
   padding-right: 3rem;
 }
 
-.planRadioPro {
+.radioPro {
   color: #1fe1e9;
   padding-right: 3rem;
 }

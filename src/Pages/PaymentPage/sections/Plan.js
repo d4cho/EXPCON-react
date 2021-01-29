@@ -1,22 +1,26 @@
 import React from 'react';
 
-import './Plan.css';
+import styles from './Plan.module.css';
 
-const Plan = () => {
+const Plan = (props) => {
+  const handleChange = (event) => {
+    props.setPlan(event.target.value);
+  };
+
   return (
     <div>
-      <div className='planSubheading'>1. Select your plan</div>
-      <form className='planRadioContainer'>
-        <label className='planRadioBasic'>
-          <input type='radio' name='plan' value='BASIC' />
+      <div className={styles.subheading}>1. Select your plan</div>
+      <form className={styles.radioContainer} onChange={handleChange}>
+        <label className={styles.radioBasic}>
+          <input type='radio' name='plan' value='basic' defaultChecked />
           BASIC
         </label>
-        <label className='planRadioAdvanced'>
-          <input type='radio' name='plan' value='ADVANCED' />
+        <label className={styles.radioAdvanced}>
+          <input type='radio' name='plan' value='advanced' />
           ADVANCED
         </label>
-        <label className='planRadioPro'>
-          <input type='radio' name='plan' value='PRO' />
+        <label className={styles.radioPro}>
+          <input type='radio' name='plan' value='pro' />
           PRO
         </label>
       </form>
