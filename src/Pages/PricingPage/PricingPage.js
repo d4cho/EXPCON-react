@@ -1,11 +1,15 @@
 import React from 'react';
 
+import Footer from '../../Components/Footer';
+import Perks from './sections/Perks';
+import Pricing from './sections/Pricing';
+
 const PricingPage = () => {
   return (
     <div>
-      <div>black</div>
-      <div>red</div>
-      <div>footer</div>
+      <Pricing />
+      <Perks />
+      <Footer />
     </div>
   );
 };
