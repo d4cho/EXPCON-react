@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Menu from '../../Components/Menu';
 import Footer from '../../Components/Footer';
@@ -11,16 +12,20 @@ import GradientButton from '../../Components/GradientButton';
 const PaymentPage = () => {
   const [billingFilled, setBillingFilled] = useState(false);
   const [creditFilled, setCreditFilled] = useState(false);
-  const [plan, setPlan] = useState('basic');
+  const [plan, setPlan] = useState('');
 
-  console.log(creditFilled);
+  const { pathname, state } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname, state.plan]);
 
   return (
     <div style={styles.container}>
       <div style={styles.paymentSectionContainer}>
         <Menu color='#000000' />
         <h1 style={styles.heading}>PAYMENT</h1>
-        <Plan setPlan={setPlan} />
+        <Plan plan={state.plan} setPlan={setPlan} />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <BillingInfo setBillingFilled={setBillingFilled} />
           <CreditCardInfo setCreditFilled={setCreditFilled} />

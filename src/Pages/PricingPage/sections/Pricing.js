@@ -40,7 +40,11 @@ const Pricing = () => {
             {item.price}
           </div>
           <div>{renderFeatures(item.features)}</div>
-          <Link to='/payment'>
+          <Link
+            to={{
+              pathname: '/payment',
+              state: { plan: item.type }
+            }}>
             <button
               className={styles.button}
               style={{ backgroundColor: color }}>
