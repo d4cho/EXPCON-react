@@ -1,0 +1,61 @@
+.pricingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #191919;
+  padding: 10rem;
+}
+
+.pricingItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pricingHeading {
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.pricingSubheading {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 6rem;
+}
+
+.pricingFeature {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.pricingItemType {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pricingLineHor {
+  width: 5rem;
+  padding-top: 1rem;
+}
+
+.pricingItemPayment {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.pricingItemPrice {
+  font-size: 4.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.pricingButton {
+  border: none;
+  color: #fff;
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  border-radius: 7.5rem;
+  margin: 2rem 0;
+  text-decoration: 'none';
+}
