@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// import styles from './Hero.module.css';
 import GradientButton from '../../../Components/GradientButton';
 import img1 from '../../../Assets/Images/Image1.png';
 import img2 from '../../../Assets/Images/Image2.png';

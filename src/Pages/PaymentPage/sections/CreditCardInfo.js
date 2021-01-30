@@ -12,6 +12,8 @@ const CreditCardInfo = (props) => {
   useEffect(() => {
     if (cardname && cardnumber && month && year && cvv) {
       props.setCreditFilled(true);
+    } else {
+      props.setCreditFilled(false);
     }
   }, [cardname, cardnumber, month, year, cvv]);
 

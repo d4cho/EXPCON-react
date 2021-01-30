@@ -13,6 +13,8 @@ const BillingInfo = (props) => {
   useEffect(() => {
     if (name && address && city && postalcode && country) {
       props.setBillingFilled(true);
+    } else {
+      props.setBillingFilled(false);
     }
   }, [name, address, city, postalcode, country]);
 
