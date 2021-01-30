@@ -1,6 +1,6 @@
 .container {
   background-color: #d34848;
-  cursor: url(../../../Assets/Images/cursor.png), auto;
+  cursor: url(../../../Assets/Images/bigspeaker1.png), auto;
 }
 
 .button {
@@ -21,14 +21,14 @@
 }
 
 .img1 {
-  position: absolute;
-  right: 8rem;
-  top: 25rem;
+  position: relative;
+  top: 10rem;
+  right: -5rem;
 }
 
 .img2 {
   position: relative;
-  top: -5rem;
+  top: -10rem;
   right: -5rem;
 }
 
