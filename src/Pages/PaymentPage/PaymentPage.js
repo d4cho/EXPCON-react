@@ -25,7 +25,7 @@ const PaymentPage = () => {
       <div style={styles.paymentSectionContainer}>
         <Menu color='#000000' />
         <h1 style={styles.heading}>PAYMENT</h1>
-        <Plan plan={state.plan} setPlan={setPlan} />
+        <Plan plan={state ? state.plan : 'BASIC'} setPlan={setPlan} />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <BillingInfo setBillingFilled={setBillingFilled} />
           <CreditCardInfo setCreditFilled={setCreditFilled} />
