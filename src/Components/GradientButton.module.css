@@ -14,7 +14,27 @@
   color: #fff;
   text-align: center;
   animation: gradient 3s ease infinite;
-  width: 10rem;
+  width: 13rem;
+  cursor: pointer;
+}
+
+.btnLarger {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.5rem 3rem;
+  border-radius: 100rem;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(to right, #1fe1e9, #5e33d1, #d34848, #ffb33f);
+  background-size: 175% 100%;
+  color: #fff;
+  text-align: center;
+  animation: gradient 3s ease infinite;
+  width: 18rem;
   cursor: pointer;
 }
 
@@ -30,7 +50,7 @@
   }
 }
 
-.btn-disabled {
+.btnDisabled {
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem 2rem;

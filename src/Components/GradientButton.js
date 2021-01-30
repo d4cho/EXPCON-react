@@ -1,17 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './GradientButton.css';
+import styles from './GradientButton.module.css';
 
 const GradientButton = (props) => {
-  const [disabled, setDisabled] = useState(false);
+  const { disabled, size, path, text } = props;
 
   return (
-    <Link to='/'>
+    <Link to={`${path}`}>
       <button
-        className={props.disabled ? 'btn-disabled' : 'btn'}
-        disabled={props.disabled}>
-        DOWNLOAD
+        className={
+          disabled
+            ? styles.btnDisabled
+            : size === 'larger'
+            ? styles.btnLarger
+            : styles.btn
+        }
+        disabled={disabled}>
+        {text}
       </button>
     </Link>
   );

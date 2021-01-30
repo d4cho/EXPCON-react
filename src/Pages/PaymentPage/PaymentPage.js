@@ -18,7 +18,7 @@ const PaymentPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname, state.plan]);
+  }, [pathname]);
 
   return (
     <div style={styles.container}>
@@ -33,6 +33,8 @@ const PaymentPage = () => {
         <Terms />
         <GradientButton
           disabled={billingFilled && creditFilled ? false : true}
+          text='DOWNLOAD'
+          path='/'
         />
       </div>
       <Footer />
