@@ -26,7 +26,7 @@ const SuperiorSound = () => {
   return (
     <div className={styles.container} style={{ cursor: `url(${cursor})` }}>
       <div className={styles.button}>
-        <HoverButton color='#D34848' />
+        <HoverButton color='#D34848' text='TRY IT NOW' link='/pricing' />
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.leftContentContainer}>
@@ -34,7 +34,7 @@ const SuperiorSound = () => {
           <div className={styles.subheading}>
             Experience live versions of your favourite songs.
           </div>
-          <button className={styles.demoButton}>SEE DEMO</button>
+          <HoverButton color='#D34848' text='SEE DEMO' />
         </div>
         <div>
           <img

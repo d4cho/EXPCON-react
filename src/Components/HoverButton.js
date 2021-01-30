@@ -14,12 +14,12 @@ const HoverButton = (props) => {
   };
 
   return (
-    <Link to='/pricing'>
+    <Link to={props.link ? props.link : '/#'}>
       <button
         onMouseMove={handleMouseMove}
         className={styles.button}
         style={{ color: `${props.color}` }}>
-        <span>TRY IT NOW</span>
+        <span>{props.text}</span>
       </button>
     </Link>
   );

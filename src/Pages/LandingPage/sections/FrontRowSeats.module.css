@@ -1,0 +1,48 @@
+.container {
+  background-color: #ffb33f;
+  /* position: relative; */
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container:hover {
+  cursor: crosshair;
+}
+
+.magic {
+  position: relative;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 15rem;
+  height: 15rem;
+  background: center center no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 3rem;
+  padding-right: 3rem;
+}
+
+.contentContainer {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.heading {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.subheading {
+  font-size: 2.5rem;
+}

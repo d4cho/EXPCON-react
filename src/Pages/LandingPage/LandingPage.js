@@ -7,6 +7,7 @@ import Perks from './sections/Perks';
 import SuperiorSound from './sections/SuperiorSound';
 import Hero from './sections/Hero';
 import Menu from '../../Components/Menu';
+import FrontRowSeats from './sections/FrontRowSeats';
 
 const LandingPage = () => {
   return (
@@ -14,7 +15,7 @@ const LandingPage = () => {
       <Menu />
       <Hero />
       <SuperiorSound />
-      <div>Front Row Seats</div>
+      <FrontRowSeats />
       <Perks />
       <Reviews />
       <GetNow />

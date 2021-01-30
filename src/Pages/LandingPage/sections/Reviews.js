@@ -9,7 +9,7 @@ const Reviews = () => {
   return (
     <div className={styles.container}>
       <div className={styles.button}>
-        <HoverButton color='#1FE1E9' />
+        <HoverButton color='#1FE1E9' text='TRY IT NOW' link='/pricing' />
       </div>
       <div className={styles.contentContainer}>
         <img className={styles.img1} src={speaker1} alt='speaker1' />
