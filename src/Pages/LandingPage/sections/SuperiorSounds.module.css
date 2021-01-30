@@ -1,0 +1,60 @@
+.container {
+  background-color: #d34848;
+  cursor: url(../../../Assets/Images/cursor.png), auto;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 3rem;
+  padding-right: 3rem;
+}
+
+.contentContainer {
+  display: flex;
+  padding: 10rem 5rem 12rem 10rem;
+}
+
+.leftContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.img1 {
+  position: absolute;
+  right: 8rem;
+  top: 25rem;
+}
+
+.img2 {
+  position: relative;
+  top: -5rem;
+  right: -5rem;
+}
+
+.heading {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.subheading {
+  font-size: 2.5rem;
+  color: #0b0b0b;
+  padding-bottom: 6rem;
+}
+
+.demoButton {
+  width: 16rem;
+  height: 4rem;
+  background-color: #ffffff;
+  color: #d34848;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+}
