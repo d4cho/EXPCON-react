@@ -5,7 +5,7 @@ import styles from './Menu.module.css';
 const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const color = props.color ? props.color : '#fff';
+  const color = isOpen ? '#000000' : '#fff';
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,15 @@ const Menu = (props) => {
   return (
     <div>
       <div className={isOpen && styles.Backdrop} onClick={handleClick} />
-      <div className={isOpen ? styles.CircleBig : styles.Circle} />
+      <div className={isOpen ? styles.CircleBig : styles.Circle}>
+        {isOpen && (
+          <div className={styles.Text}>
+            <span className={styles.TextHome}>HOME</span>
+            <span className={styles.TextPricing}>PRICING</span>
+            <span className={styles.TextPayment}>PAYMENT</span>
+          </div>
+        )}
+      </div>
       <div className={styles.Menu} style={{ color }}>
         <i
           className='fas fa-bars'
