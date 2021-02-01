@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import GetNow from './sections/GetNow';
 import Footer from '../../Components/Footer';
@@ -10,6 +11,12 @@ import Menu from '../../Components/Menu';
 import FrontRowSeats from './sections/FrontRowSeats';
 
 const LandingPage = () => {
+  const { pathname, state } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <Menu />
