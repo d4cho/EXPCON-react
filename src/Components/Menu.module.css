@@ -1,7 +1,67 @@
 .Menu {
+  display: flex;
   position: fixed;
   font-size: 2.5rem;
   top: 5rem;
   left: 5rem;
   z-index: 100;
+}
+
+.Circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 90;
+  left: 4.05rem;
+  top: 4.2rem;
+  background: linear-gradient(to right, #1fe1e9, #5e33d1, #d34848, #ffb33f);
+  animation-name: shrink;
+  animation-duration: 0.5s;
+}
+
+.CircleBig {
+  width: 45rem;
+  height: 45rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 90;
+  left: -15rem;
+  top: -10rem;
+  background: linear-gradient(to right, #1fe1e9, #5e33d1, #d34848, #ffb33f);
+  animation-name: grow;
+  animation-duration: 0.5s;
+}
+
+@keyframes grow {
+  from {
+    width: 4rem;
+    height: 4rem;
+    left: 4.05rem;
+    top: 4.2rem;
+  }
+  to {
+    width: 45rem;
+    height: 45rem;
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 45rem;
+    height: 45rem;
+    left: -15rem;
+    top: -10rem;
+  }
+  to {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.Backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
 }
