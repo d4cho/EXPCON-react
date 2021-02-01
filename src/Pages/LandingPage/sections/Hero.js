@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import classes from './Hero.module.css';
 import GradientButton from '../../../Components/GradientButton';
 import img1 from '../../../Assets/Images/Image1.png';
 import img2 from '../../../Assets/Images/Image2.png';
@@ -14,6 +15,9 @@ const Hero = () => {
 
   return (
     <div style={styles.container(img)}>
+      {img === 1 && <img className={classes.img} src={img1} alt='img1' />}
+      {img === 2 && <img className={classes.img} src={img2} alt='img2' />}
+      {img === 3 && <img className={classes.img} src={img3} alt='img3' />}
       <div style={styles.content}>
         <h1 style={styles.heading}>INTERACTIVE CONCERT EXPERIENCE</h1>
         <h2 style={styles.subheading}>
@@ -50,13 +54,13 @@ const styles = {
       justifyContent: 'flex-end'
     };
 
-    if (img === 1) {
-      containerStyle.backgroundImage = `url(${img1}) `;
-    } else if (img === 2) {
-      containerStyle.backgroundImage = `url(${img2}) `;
-    } else {
-      containerStyle.backgroundImage = `url(${img3}) `;
-    }
+    // if (img === 1) {
+    //   containerStyle.backgroundImage = `url(${img1}) `;
+    // } else if (img === 2) {
+    //   containerStyle.backgroundImage = `url(${img2}) `;
+    // } else {
+    //   containerStyle.backgroundImage = `url(${img3}) `;
+    // }
 
     return containerStyle;
   },
