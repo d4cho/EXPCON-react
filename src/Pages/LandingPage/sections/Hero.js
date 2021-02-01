@@ -54,14 +54,6 @@ const styles = {
       justifyContent: 'flex-end'
     };
 
-    // if (img === 1) {
-    //   containerStyle.backgroundImage = `url(${img1}) `;
-    // } else if (img === 2) {
-    //   containerStyle.backgroundImage = `url(${img2}) `;
-    // } else {
-    //   containerStyle.backgroundImage = `url(${img3}) `;
-    // }
-
     return containerStyle;
   },
 
