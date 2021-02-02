@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #d34848;
+  padding: 10rem;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.line {
+  border-bottom: 2px solid #fff;
+  width: 5rem;
+}
+
+.heading {
+  color: #fff;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.item {
+  width: 20rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}

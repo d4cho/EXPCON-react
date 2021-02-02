@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './Perks.module.css';
+
 const DATA = [
   {
     title: 'Subscription Payment Model',
@@ -22,52 +24,20 @@ const Perks = () => {
   const renderItems = () =>
     DATA.map((item, idx) => {
       return (
-        <div key={idx} style={styles.item}>
-          <div style={styles.line}></div>
-          <h2 style={styles.title}>{item.title}</h2>
-          <div style={styles.subtitle}>{item.subtitle}</div>
+        <div key={idx} className={styles.item}>
+          <div className={styles.line}></div>
+          <h2 className={styles.title}>{item.title}</h2>
+          <div className={styles.subtitle}>{item.subtitle}</div>
         </div>
       );
     });
 
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>PERKS</h1>
-      <div style={styles.itemsContainer}>{renderItems()}</div>
+    <div className={styles.container}>
+      <h1 className={styles.heading}>PERKS</h1>
+      <div className={styles.itemsContainer}>{renderItems()}</div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: '#D34848',
-    padding: '10rem'
-  },
-  itemsContainer: {
-    display: 'flex',
-    justifyContent: 'space-between'
-  },
-  line: {
-    borderBottom: '2px solid #fff',
-    width: '5rem'
-  },
-  heading: {
-    color: '#fff',
-    fontSize: '4rem',
-    paddingBottom: '3rem'
-  },
-  title: {
-    color: '#fff',
-    fontSize: '3rem'
-  },
-  item: {
-    width: '20rem'
-  },
-  subtitle: {
-    fontSize: '2rem'
-  }
 };
 
 export default Perks;
