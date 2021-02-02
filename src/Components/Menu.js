@@ -19,7 +19,7 @@ const Menu = (props) => {
         {isOpen && (
           <div className={styles.TextContainer}>
             <Link to='/' style={{ textDecoration: 'none' }}>
-              <span className={styles.TextHome}>HOME</span>
+              <span className={styles.TextHome}>WHAT IS IT</span>
             </Link>
             <Link to='/pricing' style={{ textDecoration: 'none' }}>
               <span className={styles.TextPricing}>PRICING</span>
