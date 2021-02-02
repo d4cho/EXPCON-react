@@ -9,8 +9,6 @@ const HoverButton = (props) => {
     const y = e.pageY - e.target.offsetTop;
     e.target.style.setProperty('--x', `${x}px`);
     e.target.style.setProperty('--y', `${y}px`);
-    // debugger;
-    // console.log(x, y, e.target.offsetLeft, e.target.offsetTop);
   };
 
   return (
