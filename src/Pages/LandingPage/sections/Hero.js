@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import classes from './Hero.module.css';
 import GradientButton from '../../../Components/GradientButton';
@@ -9,19 +9,21 @@ import img3 from '../../../Assets/Images/Image3.png';
 const Hero = () => {
   const [img, setImg] = useState(1);
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (img === 1) {
+        setImg(2);
+      } else if (img === 2) {
+        setImg(3);
+      } else {
+        setImg(1);
+      }
+    }, 4000);
+  }, [img]);
+
   const handleClick = (num) => {
     setImg(num);
   };
-
-  setTimeout(() => {
-    if (img === 1) {
-      setImg(2);
-    } else if (img === 2) {
-      setImg(3);
-    } else {
-      setImg(1);
-    }
-  }, 4000);
 
   return (
     <div style={styles.container(img)}>
