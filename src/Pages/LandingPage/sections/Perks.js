@@ -63,7 +63,8 @@ const styles = {
   },
   itemsContainer: {
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    flexWrap: 'wrap'
   },
   line: {
     borderBottom: '2px solid #fff',
@@ -71,15 +72,15 @@ const styles = {
   },
   heading: {
     color: '#fff',
-    fontSize: '4rem',
-    paddingBottom: '3rem'
+    fontSize: '4rem'
   },
   title: {
     color: '#fff',
     fontSize: '3rem'
   },
   item: {
-    width: '20rem'
+    width: '20rem',
+    paddingTop: '3rem'
   },
   subtitle: {
     fontSize: '2rem',
