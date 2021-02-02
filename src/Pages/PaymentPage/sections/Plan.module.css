@@ -11,17 +11,37 @@
   padding-bottom: 5rem;
 }
 
-.radioBasic {
-  color: #d24848;
-  padding-right: 3rem;
+/*  */
+
+.radio {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.5rem;
 }
 
-.radioAdvanced {
-  color: #ffb33f;
-  padding-right: 3rem;
+.radioInput input {
+  display: flex;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.radioPro {
-  color: #1fe1e9;
+.radioInput input:checked + .radioControl {
+  border: 0.2rem solid currentColor;
+  background: currentColor;
+}
+
+.radioControl {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid black;
+  transform: translateY(-0.2rem);
+}
+
+.radioLabel {
+  line-height: 1;
   padding-right: 3rem;
 }
