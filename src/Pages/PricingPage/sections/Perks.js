@@ -22,15 +22,13 @@ const DATA = [
 
 const Perks = () => {
   const renderItems = () =>
-    DATA.map((item, idx) => {
-      return (
-        <div key={idx} className={styles.item}>
-          <div className={styles.line}></div>
-          <h2 className={styles.title}>{item.title}</h2>
-          <div className={styles.subtitle}>{item.subtitle}</div>
-        </div>
-      );
-    });
+    DATA.map((item, idx) => (
+      <div key={idx} className={styles.item}>
+        <div className={styles.line}></div>
+        <h2 className={styles.title}>{item.title}</h2>
+        <div className={styles.subtitle}>{item.subtitle}</div>
+      </div>
+    ));
 
   return (
     <div className={styles.container}>
