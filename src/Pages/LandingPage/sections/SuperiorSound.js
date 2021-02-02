@@ -25,7 +25,7 @@ const SuperiorSound = () => {
 
   return (
     <div className={styles.container}>
-      {/* <Cursor /> */}
+      <Cursor />
       <div className={styles.button}>
         <HoverButton color='#D34848' text='TRY IT NOW' link='/pricing' />
       </div>

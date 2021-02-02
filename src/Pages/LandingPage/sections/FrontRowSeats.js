@@ -11,8 +11,8 @@ const FrontRowSeats = () => {
     let magic = test;
     let magicWHalf = magic.current.offsetWidth / 2;
 
-    magic.current.style.left = e.pageX - magicWHalf + 'px';
-    magic.current.style.top = e.screenY - magicWHalf * 3.8 + 'px';
+    magic.current.style.left = e.clientX - magicWHalf + 'px';
+    magic.current.style.top = e.clientY - magicWHalf * 3 + 'px';
   };
 
   return (

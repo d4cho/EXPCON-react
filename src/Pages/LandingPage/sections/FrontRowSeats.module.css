@@ -8,15 +8,15 @@
 }
 
 .container:hover {
-  cursor: crosshair;
+  cursor: none;
 }
 
 .magic {
   position: relative;
   top: calc(50% - 10rem);
   left: calc(50% - 10rem);
-  width: 15rem;
-  height: 15rem;
+  width: 40rem;
+  height: 40rem;
   background: center center no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
