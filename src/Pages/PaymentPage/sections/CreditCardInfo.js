@@ -15,7 +15,7 @@ const CreditCardInfo = (props) => {
     } else {
       props.setCreditFilled(false);
     }
-  }, [cardname, cardnumber, month, year, cvv]);
+  }, [cardname, cardnumber, month, year, cvv, props]);
 
   const handleMonth = (e) => {
     setMonth(e.target.value);

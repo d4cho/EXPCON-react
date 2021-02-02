@@ -14,7 +14,10 @@ const Menu = (props) => {
 
   return (
     <div>
-      <div className={isOpen && styles.Backdrop} onClick={handleClick} />
+      <div
+        className={isOpen ? styles.Backdrop : undefined}
+        onClick={handleClick}
+      />
       <div className={isOpen ? styles.CircleBig : styles.Circle}>
         {isOpen && (
           <div className={styles.TextContainer}>

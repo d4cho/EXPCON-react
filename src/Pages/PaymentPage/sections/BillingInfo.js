@@ -16,7 +16,7 @@ const BillingInfo = (props) => {
     } else {
       props.setBillingFilled(false);
     }
-  }, [name, address, city, postalcode, country]);
+  }, [name, address, city, postalcode, country, props]);
 
   const handleCountry = (e) => {
     setCountry(e.target.value);

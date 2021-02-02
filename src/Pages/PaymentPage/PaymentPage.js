@@ -12,7 +12,7 @@ import GradientButton from '../../Components/GradientButton';
 const PaymentPage = () => {
   const [billingFilled, setBillingFilled] = useState(false);
   const [creditFilled, setCreditFilled] = useState(false);
-  const [plan, setPlan] = useState('');
+  const [plan, setPlan] = useState('BASIC');
 
   const { pathname, state } = useLocation();
 
@@ -25,7 +25,7 @@ const PaymentPage = () => {
       <div style={styles.paymentSectionContainer}>
         <Menu color='#000000' />
         <h1 style={styles.heading}>PAYMENT</h1>
-        <Plan plan={state ? state.plan : 'BASIC'} setPlan={setPlan} />
+        <Plan plan={state ? state.plan : plan} setPlan={setPlan} />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <BillingInfo setBillingFilled={setBillingFilled} />
           <CreditCardInfo setCreditFilled={setCreditFilled} />
