@@ -80,6 +80,7 @@
   cursor: pointer;
   position: relative;
   animation: float 0.3s linear 0s;
+  opacity: 0.6;
 }
 
 .TextPricing {
@@ -88,6 +89,7 @@
   position: relative;
   animation: float 0.3s linear 0.2s;
   animation-fill-mode: backwards;
+  opacity: 0.6;
 }
 
 .TextPayment {
@@ -96,6 +98,13 @@
   position: relative;
   animation: float 0.3s linear 0.4s;
   animation-fill-mode: backwards;
+  opacity: 0.6;
+}
+
+.TextHome:hover,
+.TextPayment:hover,
+.TextPricing:hover {
+  opacity: 1;
 }
 
 @keyframes float {
