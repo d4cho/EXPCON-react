@@ -12,6 +12,7 @@
 .contentContainer {
   display: flex;
   padding: 10rem 5rem 12rem 10rem;
+  flex-wrap: wrap-reverse;
 }
 
 .leftContentContainer {
@@ -21,16 +22,18 @@
 
 .img1 {
   position: relative;
-  top: 10rem;
+  top: 5rem;
   right: -5rem;
   cursor: pointer;
+  width: 15rem;
 }
 
 .img2 {
   position: relative;
-  top: -10rem;
+  top: -5rem;
   right: -5rem;
   cursor: pointer;
+  width: 15rem;
 }
 
 .heading {
