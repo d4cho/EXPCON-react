@@ -10,6 +10,8 @@ import Hero from './sections/Hero';
 import Menu from '../../Components/Menu';
 import FrontRowSeats from './sections/FrontRowSeats';
 
+import Cursor from '../../Components/Cursor';
+
 const LandingPage = () => {
   const { pathname, state } = useLocation();
 

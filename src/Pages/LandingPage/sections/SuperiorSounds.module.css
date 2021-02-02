@@ -1,6 +1,6 @@
 .container {
   background-color: #d34848;
-  cursor: url(../../../Assets/Images/bigspeaker1.png), auto;
+  /* cursor: none; */
 }
 
 .button {
@@ -41,6 +41,7 @@
   font-size: 2.5rem;
   color: #0b0b0b;
   padding-bottom: 6rem;
+  font-weight: bold;
 }
 
 .demoButton {

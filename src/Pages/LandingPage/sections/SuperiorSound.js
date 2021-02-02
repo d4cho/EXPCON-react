@@ -5,8 +5,8 @@ import styles from './SuperiorSounds.module.css';
 import speaker1 from '../../../Assets/Images/bigspeaker1.png';
 import speaker2 from '../../../Assets/Images/bigspeaker2.png';
 import HoverButton from '../../../Components/HoverButton';
-import cursor from '../../../Assets/Images/cursor.png';
 import audio from '../../../Assets/Audio/audio.mp3';
+import Cursor from '../../../Components/Cursor';
 
 const SuperiorSound = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -24,7 +24,8 @@ const SuperiorSound = () => {
   };
 
   return (
-    <div className={styles.container} style={{ cursor: `url(${cursor})` }}>
+    <div className={styles.container}>
+      {/* <Cursor /> */}
       <div className={styles.button}>
         <HoverButton color='#D34848' text='TRY IT NOW' link='/pricing' />
       </div>
@@ -34,7 +35,9 @@ const SuperiorSound = () => {
           <div className={styles.subheading}>
             Experience live versions of your favourite songs.
           </div>
-          <HoverButton color='#D34848' text='SEE DEMO' />
+          <div>
+            <HoverButton color='#D34848' text='SEE DEMO' />
+          </div>
         </div>
         <div>
           <img
