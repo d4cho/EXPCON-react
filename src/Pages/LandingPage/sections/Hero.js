@@ -13,6 +13,16 @@ const Hero = () => {
     setImg(num);
   };
 
+  setTimeout(() => {
+    if (img === 1) {
+      setImg(2);
+    } else if (img === 2) {
+      setImg(3);
+    } else {
+      setImg(1);
+    }
+  }, 4000);
+
   return (
     <div style={styles.container(img)}>
       {img === 1 && <img className={classes.img} src={img1} alt='img1' />}
