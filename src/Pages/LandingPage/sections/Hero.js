@@ -8,9 +8,14 @@ import img3 from '../../../Assets/Images/Image3.png';
 
 const Hero = () => {
   const [img, setImg] = useState(1);
+  let timer;
 
   useEffect(() => {
-    setTimeout(() => {
+    autoCarousel();
+  }, [img]);
+
+  const autoCarousel = () => {
+    timer = setTimeout(() => {
       if (img === 1) {
         setImg(2);
       } else if (img === 2) {
@@ -19,10 +24,11 @@ const Hero = () => {
         setImg(1);
       }
     }, 4000);
-  }, [img]);
+  };
 
   const handleClick = (num) => {
     setImg(num);
+    clearTimeout(timer);
   };
 
   return (
